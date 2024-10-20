@@ -142,8 +142,10 @@ select {
 [type=submit],
 button,
 html [type=button] {
-    -webkit-appearance: button
+    -webkit-appearance: button; /* WebKit浏览器 */
+    appearance: button;          /* 标准属性 */
 }
+
 
 [type=button]::-moz-focus-inner,
 [type=reset]::-moz-focus-inner,
@@ -192,10 +194,15 @@ legend {
     height: auto
 }
 
-[type=search] {
-    -webkit-appearance: textfield;
-    outline-offset: -2px
+[type=reset],
+[type=submit],
+button,
+html [type=button] {
+    -webkit-appearance: button; /* 适用于 WebKit 浏览器 */
+    -moz-appearance: button;    /* 适用于 Firefox */
+    appearance: button;          /* 标准属性 */
 }
+
 
 [type=search]::-webkit-search-cancel-button,
 [type=search]::-webkit-search-decoration {
@@ -394,39 +401,39 @@ template {
 }
 
 .fa-rotate-90 {
-    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
-    -webkit-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg)
+  /* 移除以下行 */
+  /* -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)"; */
+  -webkit-transform: rotate(90deg); /* Safari */
+  -ms-transform: rotate(90deg); /* 较旧的 IE */
+  transform: rotate(90deg); /* 现代浏览器 */
 }
 
 .fa-rotate-180 {
-    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
-    -webkit-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    transform: rotate(180deg)
+  /* 移除以下行 */
+  /* -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)"; */
+  -webkit-transform: rotate(180deg); /* Safari */
+  -ms-transform: rotate(180deg); /* 较旧的 IE */
+  transform: rotate(180deg); /* 现代浏览器 */
 }
 
-.fa-rotate-270 {
-    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
-    -webkit-transform: rotate(270deg);
-    -ms-transform: rotate(270deg);
-    transform: rotate(270deg)
+
+.fa-filter {
+  -webkit-filter: blur(5px); /* 旧版 Safari */
+  filter: blur(5px); /* 标准属性，现代浏览器 */
 }
+
 
 .fa-flip-horizontal {
-    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
-    -webkit-transform: scale(-1, 1);
-    -ms-transform: scale(-1, 1);
-    transform: scale(-1, 1)
+  -webkit-transform: scale(-1, 1); /* 适用于旧版 Safari */
+  transform: scale(-1, 1); /* 现代浏览器 */
 }
 
+
 .fa-flip-vertical {
-    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
-    -webkit-transform: scale(1, -1);
-    -ms-transform: scale(1, -1);
-    transform: scale(1, -1)
+  -webkit-transform: scale(1, -1); /* 适用于旧版 Safari */
+  transform: scale(1, -1); /* 现代浏览器 */
 }
+
 
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical,
@@ -3307,16 +3314,14 @@ template {
 
 [class*=" devicon-"],
 [class^=devicon-] {
-    font-family: devicon;
-    speak: none;
-    font-style: normal;
-    font-weight: 400;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale
+    font-family: devicon; /* 字体设置 */
+    font-style: normal; /* 字体样式 */
+    font-weight: 400; /* 字体粗细 */
+    line-height: 1; /* 行高 */
+    -webkit-font-smoothing: antialiased; /* 字体平滑处理 */
+    -moz-osx-font-smoothing: grayscale; /* 字体平滑处理（针对 macOS） */
 }
+
 
 .devicon-express-original-wordmark:before {
     content: "\e93c"
