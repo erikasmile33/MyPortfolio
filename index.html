@@ -30,10 +30,15 @@
     <!-- Import fontawsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
+    <!-- Import Devicons -->
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+   <!-- Import JS: Particles Theme -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
   </head>
 
   <body>
-    <div id="particles-js">
+    <div id="particles-js" >
       <div class="header">
         <h1>
           <span class="site-title">Xinyi Wang</span>
@@ -98,7 +103,7 @@
 
       <!-- User Specifics -->
       <div class="user">
-        <!-- Technology Stack #1: Languages -->
+        <!-- Technology Stack #1: Languages
         <div class="tech">
           <h2>Languages</h2>
           <i class="devicon-python-plain colored"></i>
@@ -106,35 +111,34 @@
           <i class="devicon-cplusplus-plain colored"></i>
           <i class="devicon-javascript-plain colored"></i>
           <p>My favorite languages for systems programming, software engineering, and data analysis.</p>
-        </div>
+        </div> -->
 
         <!-- Technology Stack #2: Front-End -->
         <div class="tech">
           <h2>Front-End</h2>
-          <!-- <i class="devicon-react-original colored"></i> -->
-          <i class="devicon-bootstrap-plain-wordmark colored"></i>
-          <i class="devicon-html5-plain-wordmark colored"></i>
+          <i class="devicon-javascript-plain colored"></i>
           <i class="devicon-css3-plain-wordmark colored"></i>
-          <p>My preferred technologies for front-end web development and component design.</p>
+          <i class="devicon-html5-plain-wordmark colored"></i>
+          <i class="devicon-bootstrap-plain-wordmark colored"></i>
+
+          <p>My preferred technologies for back-end web programming and database architecture.</p>
         </div>
 
         <!-- Technology Stack #3: Back-End -->
         <div class="tech">
           <h2>Back-End</h2>
-          <i class="devicon-nodejs-plain colored"></i>
-          <i class="devicon-express-original-wordmark colored"></i>
-          <i class="devicon-mongodb-plain-wordmark colored"></i>
-          <i class="devicon-postgresql-plain-wordmark colored"></i>
+          <i class="devicon-ruby-plain-wordmark colored"></i>
+          <i class="devicon-rails-plain-wordmark colored"></i>
+
           <p>My preferred technologies for back-end web programming and database architecture.</p>
         </div>
 
         <!-- Technology Stack #4: Tools -->
         <div class="tech">
           <h2>Tools</h2>
+          <i class="devicon-github-original-wordmark colored"></i>
+          <i class="devicon-heroku-original-wordmark colored"></i>
           <i class="devicon-git-plain-wordmark colored"></i>
-          <i class="devicon-visualstudio-plain colored"></i>
-          <i class="devicon-github-plain-wordmark colored"></i>
-          <i class="devicon-docker-plain-wordmark colored"></i>
           <p>My favorite tools for version control, code editing, and container orchestration.</p>
         </div>
       </div>
@@ -286,13 +290,21 @@
       <p>&copy; Xinyi Wang, 2024</p>
     </footer>
 
+
     <!-- Import JS: Particles Theme -->
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+      particlesJS.load('particles-js', 'path/to/particles.json', function() {
+      console.log('callback - particles.js config loaded');
+      });
+    </script>
     <!-- Import JS: Sweet Scroll -->
     <script src="./assets/js/sweet-scroll.min.js"></script>
     <!-- Import JS: Google Analytics -->
     <script src="./assets/js/google-analytics.js"></script>
     <!-- Import JS: Main Script -->
     <script src="./assets/js/main.js"></script>
+
+
   </body>
 </html>
