@@ -3582,6 +3582,7 @@ a img {
 
 .user-projects {
     margin: 20px auto
+
 }
 
 .user-projects img {
@@ -3678,4 +3679,38 @@ a img {
     text-decoration: none;
     margin: 0;
     color: #fff
+}
+
+.images-right {
+  display: flex; /* 使用 Flex 布局 */
+  justify-content: space-between; /* 在一行中均匀分配空间 */
+  gap: 10px; /* 图片之间的间距 */
+}
+
+.tokyoscene-img {
+  border-radius: 16px; /* 圆角 */
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.3); /* 阴影效果 */
+  transition: box-shadow 0.3s, transform 0.3s; /* 添加平滑过渡效果 */
+  width: 40%; /* 第一张宽度 */
+  height: auto; /* 高度自适应 */
+}
+
+.tokyoscene-img:hover {
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5); /* 鼠标悬停时加大阴影 */
+  transform: scale(1.05); /* 鼠标悬停时稍微放大 */
+}
+
+.img-1 {
+
+}
+
+.img-2 {
+  width: 40%; /* 第二张宽度 */
+  height: auto; /* 高度自适应 */
+}
+
+.img-3 {
+  width: auto; /* 第三张宽度自适应前两张的宽度 */
+  height: 100%; /* 高度与旁边的段落一致 */
+  max-height: 200px; /* 确保最大高度，防止过高 */
 }
