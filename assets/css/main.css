@@ -3700,7 +3700,8 @@ a img {
 }
 
 .img-1 {
-
+  width: 40%; /* 第二张宽度 */
+  height: auto; /* 高度自适应 */
 }
 
 .img-2 {
