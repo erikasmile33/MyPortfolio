@@ -3698,3 +3698,8 @@ a img {
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5); /* 鼠标悬停时加大阴影 */
   transform: scale(1.05); /* 鼠标悬停时稍微放大 */
 }
+
+.USpeak4Me-img:hover{
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5); /* 鼠标悬停时加大阴影 */
+  transform: scale(1.05); /* 鼠标悬停时稍微放大 */
+}
