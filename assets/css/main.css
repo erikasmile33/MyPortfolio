@@ -3536,176 +3536,177 @@ a img {
     }
 }
 
+/* General styles */
 .tech {
-    margin: 10px
+  margin: 10px;
 }
 
 .user {
-    text-align: center;
-    font-size: 60px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  text-align: center;
+  font-size: 60px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .user p {
-    font-size: 16px
-}
-
-@media only screen and (min-width:550px) {
-    .user {
-        flex-wrap: nowrap;
-        font-size: 75px
-    }
+  font-size: 16px;
 }
 
 .user-details {
-    text-align: center;
-    margin: 5px auto
+  text-align: center;
+  margin: 5px auto;
 }
 
+/* Project container styles */
 #projects {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 90%;
-    max-width: 960px;
-    margin: 0 auto
-}
-
-@media only screen and (min-width:550px) {
-    #projects {
-        width: 80%
-    }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 .user-projects {
-    margin: 20px auto
+  margin: 50px auto;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Allow wrapping */
 }
 
 .user-projects img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
 }
 
 .user-projects h5 {
-    margin: 0
+  margin: 0;
 }
 
 .user-projects li {
-    color: #1488CC;
-    font-size: 1.1rem
+  color: #1488CC;
+  font-size: 1.1rem;
 }
 
 .user-projects p {
-    margin-right: 5px
+  margin-right: 5px;
 }
 
-@media only screen and (min-width:550px) {
-    .contents {
-        margin-left: 0;
-        width: 48%
-    }
-
-    .contents,
-    .contents-right {
-        margin-top: -5%
-    }
-
-    .contents-right,
-    .images-right {
-        float: right;
-        width: 48%
-    }
-
-    .images-right img {
-        float: right
-    }
-
-    .images-left {
-        float: left;
-        width: 48%
-    }
-
-    .images-left img {
-        float: left
-    }
-}
-
+/* Link styles */
 .project-link {
-    display: inline-block;
-    margin: 10px 0;
-    padding: 5px;
-    color: #1488CC;
-    background-color: transparent;
-    border: 1px solid #1488CC;
-    border-radius: 10px;
-    text-align: center;
-    outline: 0;
-    text-decoration: none;
-    cursor: pointer;
-    transition: color .3s ease-out, background-color .3s ease-out, border-color .3s ease-out
+  display: inline-block;
+  margin: 10px 0;
+  padding: 5px;
+  color: #1488CC;
+  background-color: transparent;
+  border: 1px solid #1488CC;
+  border-radius: 10px;
+  text-align: center;
+  outline: 0;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color .3s ease-out, background-color .3s ease-out, border-color .3s ease-out;
 }
 
 .project-link:active,
 .project-link:hover {
-    background-color: #5347a8;
-    border-color: #5347a8;
-    color: #fff;
-    transition: color .3s ease-in, background-color .3s ease-in, border-color .3s ease-in
+  background-color: #5347a8;
+  border-color: #5347a8;
+  color: #fff;
+  transition: color .3s ease-in, background-color .3s ease-in, border-color .3s ease-in;
 }
 
+/* Footer styles */
 .footer {
-    background: #1488CC;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2B32B2, #1488CC);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    padding: 10px 0;
-    margin-top: 100px;
-    text-align: center;
-    color: #fff
+  background: linear-gradient(to right, #2B32B2, #1488CC);
+  padding: 10px 0;
+  margin-top: 100px;
+  text-align: center;
+  color: #fff;
 }
 
 .footer .love {
-    color: red
+  color: red;
 }
 
 .footer a {
-    text-decoration: none;
-    margin: 0;
-    color: #fff
+  text-decoration: none;
+  margin: 0;
+  color: #fff;
 }
 
+/* Image container styles */
 .images-right {
-  display: flex; /* 使用 Flex 布局 */
-  justify-content: space-between; /* 在一行中均匀分配空间 */
-  gap: 10px; /* 图片之间的间距 */
+  display: flex; /* Use Flex layout */
+  justify-content: space-between; /* Distribute space evenly in a row */
+  gap: 5px; /* Space between images */
 }
 
-.tokyoscene-img {
-  border-radius: 16px; /* 圆角 */
-  box-shadow: 2px 2px rgba(0, 0, 0, 0.3); /* 阴影效果 */
-  transition: box-shadow 0.3s, transform 0.3s; /* 添加平滑过渡效果 */
-  width: 40%; /* 第一张宽度 */
-  height: auto; /* 高度自适应 */
-}
-
-.tokyoscene-img:hover {
-  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5); /* 鼠标悬停时加大阴影 */
-  transform: scale(1.05); /* 鼠标悬停时稍微放大 */
-}
-
+.tokyoscene-img,
 .USpeak4Me-img {
-  border-radius: 16px; /* 圆角 */
-  box-shadow: 2px 2px rgba(0, 0, 0, 0.3); /* 阴影效果 */
-  transition: box-shadow 0.3s, transform 0.3s; /* 添加平滑过渡效果 */
-  height: auto; /* 高度自适应 */
+  border-radius: 16px; /* Rounded corners */
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.3); /* Shadow effect */
+  transition: box-shadow 0.3s, transform 0.3s; /* Add smooth transition effect */
+  height: auto; /* Height adapts automatically */
 }
-.USpeak4Me-img:hover{
-  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5); /* 鼠标悬停时加大阴影 */
-  transform: scale(1.05); /* 鼠标悬停时稍微放大 */
+
+
+.tokyoscene-img:hover,
+.USpeak4Me-img:hover {
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5); /* Increase shadow on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Media queries */
+@media only screen and (min-width: 550px) {
+  .user {
+      flex-wrap: nowrap;
+      font-size: 75px;
+  }
+
+  #projects {
+      width: 80%;
+  }
+
+  .images-left {
+      width: 48%;
+      margin-right: 2%;
+  }
+
+  .contents-right {
+      width: 48%;
+      text-align: left;
+  }
+}
+
+/* Adjustments for mobile devices */
+@media (max-width: 768px) {
+  .user-projects {
+      flex-direction: column; /* Stack content vertically on mobile devices */
+  }
+
+  .images-right, .images-left {
+      order: -1; /* Display images above text on mobile devices */
+      width: 100%; /* Images take full width on mobile devices */
+  }
+
+  .contents, .contents-right {
+      width: 100%; /* Text sections also take full width on mobile devices */
+  }
+}
+
+/* For desktop version, keep images on the right */
+@media (min-width: 769px) {
+  .images-right, .images-left {
+      order: 1; /* Maintain default order on desktop */
+      width: 50%; /* Images occupy 50% of the width */
+  }
+
+  .contents, .contents-right {
+      width: 50%; /* Text sections occupy 50% of the width */
+  }
 }
