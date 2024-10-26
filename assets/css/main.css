@@ -3550,6 +3550,16 @@ a img {
   justify-content: space-between;
 }
 
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .user {
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items in the column */
+    align-items: center; /* Center items horizontally */
+    font-size: 40px; /* Adjust font size if necessary */
+  }
+}
+
 .user p {
   font-size: 16px;
 }
@@ -3570,8 +3580,7 @@ a img {
 }
 
 .user-projects {
-  margin: 50px auto;
-
+  margin: 70px auto;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap; /* Allow wrapping */
@@ -3643,7 +3652,7 @@ a img {
 .images-right {
   display: flex; /* Use Flex layout */
   justify-content: space-between; /* Distribute space evenly in a row */
-  gap: 5px; /* Space between images */
+  gap: 0px; /* Space between images */
 }
 
 .tokyoscene-img,
@@ -3660,6 +3669,8 @@ a img {
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5); /* Increase shadow on hover */
   transform: scale(1.05); /* Slightly enlarge on hover */
 }
+
+
 
 /* Media queries */
 @media only screen and (min-width: 550px) {
@@ -3690,7 +3701,6 @@ a img {
   }
 
   .images-right, .images-left {
-      order: -1; /* Display images above text on mobile devices */
       width: 100%; /* Images take full width on mobile devices */
   }
 
@@ -3701,10 +3711,10 @@ a img {
 
 /* For desktop version, keep images on the right */
 @media (min-width: 769px) {
-  .images-right, .images-left {
-      order: 1; /* Maintain default order on desktop */
-      width: 50%; /* Images occupy 50% of the width */
-  }
+  .images-right{
+    order: 1; /* Maintain default order on desktop */
+    width: 50%; /* Images occupy 50% of the width */
+}
 
   .contents, .contents-right {
       width: 50%; /* Text sections occupy 50% of the width */
