@@ -60,22 +60,19 @@
       <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
     </div>
 
-    <!-- Introduction & Technology Stack -->
-    <section id="about">
+    <!-- About -->
+    <div id="about">
 
       <!-- User Introduction-->
       <div class="user-details">
         <h1>About Me</h1>
-        <!-- picture -->
-          <img
-            src="./assets/img/jpg/My_Professional_Image.JPG"
-            alt="Professional Me"
-            width="200px"
-            height="200px"
-            style="border-radius: 50%; object-fit: cover;"
-          />
-
-        <!-- Introduction -->
+        <img
+          src="./assets/img/jpg/My_Professional_Image.JPG"
+          alt="Professional Me"
+          width="200px"
+          height="200px"
+          style="border-radius: 50%; object-fit: cover;"
+        />
         <p>
           I am a junior Ruby on Rails full-stack engineer, having graduated from the 24-week bootcamp at Le Wagon.
           Prior to this, I worked as an IT recruiter for three years, specializing in high-level talent acquisition.
@@ -120,66 +117,64 @@
         </div>
       </div>
 
-    </section>
+    </div>
 
     <!-- Projects -->
-    <section id="projects">
+    <div class="container">
+      <h1>Featured Projects</h1>
+
       <div class="row">
-        <div class="user-details col-12 col-md-6" >
-          <h1>Featured Projects</h1>
+        <!-- User Project #1: TokyoSecene -->
+        <div class="user-projects " >
+          <div class="images-right" style="display: flex; justify-content: flex-start; gap: 15px;">
+              <img src="assets/img/jpg/TokyoScene_Indexpage.jpg" alt="TokyoScene_Homepage" class="tokyoscene-img" style="width: 33%;">
+              <img src="assets/img/jpg/TokyoScene_Details.jpg" alt="TokyoScene_Details" class="tokyoscene-img" style="width: 33%;">
+              <img src="assets/img/jpg/TokyoScene_Chat.jpg" alt="TokyoScene_Chat" class="tokyoscene-img" style="width: 33%;">
+          </div>
+          <div class="contents" style="text-align: center;">
+              <h3>Tokyo Scene</h3>
+              <div>
+                  <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/rubyonrails.svg" style="filter: invert(73%) sepia(74%) saturate(1552%) hue-rotate(169deg) brightness(109%) contrast(97%);" />
+                  &nbsp;
+                  <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/ruby.svg" style="filter: invert(24%) sepia(14%) saturate(2270%) hue-rotate(222deg) brightness(102%) contrast(90%);" />
+                  &nbsp;
+                  <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/javascript.svg" style="filter: invert(33%) sepia(29%) saturate(3844%) hue-rotate(184deg) brightness(90%) contrast(84%);" />
+                  &nbsp;
+                  <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/github.svg" />
+              </div>
+              <p style="text-align: justify;">
+                  TokyoScene is a Ruby on Rails web application optimised for mobile devices, designed to aggregate and recommend music events in Tokyo. By integrating real-time Spotify data, it curates event recommendations based on users' music preferences, offering a personalised list of upcoming gigs.
+              </p>
+              <a class="project-link" target="_blank" href="https://www.tokyoscene.me">Check it out!</a>
+          </div>
         </div>
 
-    <!-- User Project #1: TokyoSecene -->
-    <div class="user-projects col-12 col-md-6" style="display: flex; ">
-      <div class="images-right" style="display: flex; justify-content: flex-start; gap: 15px;">
-          <img src="assets/img/jpg/TokyoScene_Indexpage.jpg" alt="TokyoScene_Homepage" class="tokyoscene-img" style="width: 33%;">
-          <img src="assets/img/jpg/TokyoScene_Details.jpg" alt="TokyoScene_Details" class="tokyoscene-img" style="width: 33%;">
-          <img src="assets/img/jpg/TokyoScene_Chat.jpg" alt="TokyoScene_Chat" class="tokyoscene-img" style="width: 33%;">
-      </div>
-      <div class="contents" style="text-align: center;">
-          <h3>Tokyo Scene</h3>
-          <div>
-              <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/rubyonrails.svg" style="filter: invert(73%) sepia(74%) saturate(1552%) hue-rotate(169deg) brightness(109%) contrast(97%);" />
-              &nbsp;
-              <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/ruby.svg" style="filter: invert(24%) sepia(14%) saturate(2270%) hue-rotate(222deg) brightness(102%) contrast(90%);" />
-              &nbsp;
-              <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/javascript.svg" style="filter: invert(33%) sepia(29%) saturate(3844%) hue-rotate(184deg) brightness(90%) contrast(84%);" />
-              &nbsp;
-              <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/github.svg" />
+        <!-- User Project #2: USpeak4Me -->
+        <div class="user-projects " >
+
+          <div class="images-left" >
+            <picture>
+              <!-- <source type="image/webp" srcset="./assets/img/webp/Perpetual-Crusades.webp" alt="Perpetual Crusades" /> -->
+              <img alt="USpeak4Me" src="assets/img/jpg/USpeak4Me_Indexpage.jpg" class="USpeak4Me-img" />
+            </picture>
           </div>
-          <p style="text-align: justify;">
-              TokyoScene is a Ruby on Rails web application optimised for mobile devices, designed to aggregate and recommend music events in Tokyo. By integrating real-time Spotify data, it curates event recommendations based on users' music preferences, offering a personalised list of upcoming gigs.
-          </p>
-          <a class="project-link" target="_blank" href="https://www.tokyoscene.me">Check it out!</a>
+          <div class="contents-right" style="text-align: center">
+            <h3>USpeak4Me</h3>
+            <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/ruby.svg" style="filter: invert(73%) sepia(74%) saturate(1552%) hue-rotate(169deg) brightness(109%) contrast(97%)"/>
+            &nbsp;
+            <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/rubyonrails.svg" style="filter: invert(33%) sepia(29%) saturate(3844%) hue-rotate(184deg) brightness(90%) contrast(84%)"/>
+            &nbsp;
+            <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/github.svg" />
+            <p style="text-align: justify">
+              A web application built on Ruby on Rails that connects foreign-born residents in Japan with interpreters for Japanese to English (or other languages). It facilitates essential administrative tasks such as visiting city hall, apartment rentals, and making phone calls, bridging communication gaps for easier navigation of local services.
+            </p>
+            <a class="project-link" target="_blank" href="https://uspeak4me-c92c1d2ed740.herokuapp.com"
+              >Check it out!</a
+            >
+          </div>
+        </div>
       </div>
     </div>
-
-    <!-- User Project #2: USpeak4Me -->
-    <div class="user-projects col-12 col-md-6" style="display: flex;">
-
-      <div class="images-left" >
-        <picture>
-          <!-- <source type="image/webp" srcset="./assets/img/webp/Perpetual-Crusades.webp" alt="Perpetual Crusades" /> -->
-          <img alt="USpeak4Me" src="assets/img/jpg/USpeak4Me_Indexpage.jpg" class="USpeak4Me-img" />
-        </picture>
-      </div>
-      <div class="contents-right" style="text-align: center">
-        <h3>USpeak4Me</h3>
-        <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/ruby.svg" style="filter: invert(73%) sepia(74%) saturate(1552%) hue-rotate(169deg) brightness(109%) contrast(97%)"/>
-        &nbsp;
-        <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/rubyonrails.svg" style="filter: invert(33%) sepia(29%) saturate(3844%) hue-rotate(184deg) brightness(90%) contrast(84%)"/>
-        &nbsp;
-        <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/github.svg" />
-        <p style="text-align: justify">
-          A web application built on Ruby on Rails that connects foreign-born residents in Japan with interpreters for Japanese to English (or other languages). It facilitates essential administrative tasks such as visiting city hall, apartment rentals, and making phone calls, bridging communication gaps for easier navigation of local services.
-        </p>
-        <a class="project-link" target="_blank" href="https://uspeak4me-c92c1d2ed740.herokuapp.com"
-          >Check it out!</a
-        >
-      </div>
-    </div>
-  </div>
-    </section>
 
     <!-- Footer -->
     <footer class="footer">

@@ -284,6 +284,7 @@ a img {
   text-decoration: none;
   cursor: pointer;
   transition: color .3s ease-out, background-color .3s ease-out, border-color .3s ease-out;
+  font-size: 14px;
 }
 
 .project-link:active,
