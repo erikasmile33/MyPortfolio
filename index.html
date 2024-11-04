@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
     <!-- Webpage Title -->
     <title>Xinyi Wang</title>
+    <!-- Import Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 
     <!-- Import CSS: Main Stylesheet -->
     <link rel="stylesheet" href="./assets/style.css" />
@@ -13,13 +17,12 @@
     <!-- Import Devicons -->
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 
-     <!-- Import Bootstrap -->
-     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
 
 
   </head>
 
   <body>
+
     <!-- Header -->
     <div id="particles-js" >
       <div class="header">
@@ -53,15 +56,17 @@
           <a class="link" href="#projects" data-scroll>Projects</a>
         </div>
       </div>
+
       <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
     </div>
 
-    <!-- About Me -->
+    <!-- Introduction & Technology Stack -->
     <section id="about">
 
       <!-- User Introduction-->
       <div class="user-details">
         <h1>About Me</h1>
+        <!-- picture -->
           <img
             src="./assets/img/jpg/My_Professional_Image.JPG"
             alt="Professional Me"
@@ -69,8 +74,8 @@
             height="200px"
             style="border-radius: 50%; object-fit: cover;"
           />
-        <!-- </picture> -->
 
+        <!-- Introduction -->
         <p>
           I am a junior Ruby on Rails full-stack engineer, having graduated from the 24-week bootcamp at Le Wagon.
           Prior to this, I worked as an IT recruiter for three years, specializing in high-level talent acquisition.
@@ -85,46 +90,37 @@
 
       <!-- Technology Stack -->
       <div class="container">
-
-        <div class="row text-center">
+        <div class="row">
           <!-- #1: Front-End -->
-          <div class="col-md-4 d-flex justify-content-center align-items-center">
-            <div class="tech">
-              <h2>Front-End</h2>
-              <i class="devicon-javascript-plain colored"></i>
-              <i class="devicon-css3-plain-wordmark colored"></i>
-              <i class="devicon-html5-plain-wordmark colored"></i>
-              <i class="devicon-bootstrap-plain-wordmark colored"></i>
-              <p>Javascript, Html, CSS, SCSS, Bootstrap, Stimulus, AJAX</p>
+          <div class="col-md-4">
+            <h2>Front-End</h2>
+            <i class="devicon-javascript-plain colored"></i>
+            <i class="devicon-css3-plain-wordmark colored"></i>
+            <i class="devicon-html5-plain-wordmark colored"></i>
+            <i class="devicon-bootstrap-plain-wordmark colored"></i>
+            <p>Javascript, Html, CSS, SCSS, Bootstrap, Stimulus, AJAX</p>
             </div>
-          </div>
 
           <!-- #2: Back-End -->
-          <div class="col-md-4 d-flex justify-content-center align-items-center">
-            <div class="tech">
-              <h2>Back-End</h2>
-              <i class="devicon-ruby-plain-wordmark colored"></i>
-              <i class="devicon-rails-plain-wordmark colored"></i>
-              <p>Ruby, Rails, SQLite, PostgreSQL, SQL, OOP</p>
-            </div>
+          <div class="col-md-4">
+            <h2>Back-End</h2>
+            <i class="devicon-ruby-plain-wordmark colored"></i>
+            <i class="devicon-rails-plain-wordmark colored"></i>
+            <p>Ruby, Rails, SQLite, PostgreSQL, SQL, OOP</p>
           </div>
 
           <!-- #3: Tools -->
-          <div class="col-md-4 d-flex justify-content-center align-items-center">
-            <div class="tech">
-              <h2>Tools</h2>
-              <i class="devicon-github-original-wordmark colored"></i>
-              <i class="devicon-heroku-original-wordmark colored"></i>
-              <i class="devicon-git-plain-wordmark colored"></i>
-              <p>Git, Github, Heroku</p>
-            </div>
+          <div class="col-md-4">
+            <h2>Tools</h2>
+            <i class="devicon-github-original-wordmark colored"></i>
+            <i class="devicon-heroku-original-wordmark colored"></i>
+            <i class="devicon-git-plain-wordmark colored"></i>
+            <p>Git, Github, Heroku</p>
           </div>
         </div>
       </div>
 
-
     </section>
-
 
     <!-- Projects -->
     <section id="projects">
@@ -133,58 +129,59 @@
           <h1>Featured Projects</h1>
         </div>
 
-        <!-- User Project #1: TokyoSecene -->
-        <div class="user-projects col-12 col-md-6" style="display: flex; ">
-          <div class="images-right" style="display: flex; justify-content: flex-start; gap: 15px;">
-              <img src="assets/img/jpg/TokyoScene_Indexpage.jpg" alt="TokyoScene_Homepage" class="tokyoscene-img" style="width: 33%;">
-              <img src="assets/img/jpg/TokyoScene_Details.jpg" alt="TokyoScene_Details" class="tokyoscene-img" style="width: 33%;">
-              <img src="assets/img/jpg/TokyoScene_Chat.jpg" alt="TokyoScene_Chat" class="tokyoscene-img" style="width: 33%;">
-          </div>
-          <div class="contents" style="text-align: center;">
-              <h3>Tokyo Scene</h3>
-              <div>
-                  <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/rubyonrails.svg" style="filter: invert(73%) sepia(74%) saturate(1552%) hue-rotate(169deg) brightness(109%) contrast(97%);" />
-                  &nbsp;
-                  <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/ruby.svg" style="filter: invert(24%) sepia(14%) saturate(2270%) hue-rotate(222deg) brightness(102%) contrast(90%);" />
-                  &nbsp;
-                  <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/javascript.svg" style="filter: invert(33%) sepia(29%) saturate(3844%) hue-rotate(184deg) brightness(90%) contrast(84%);" />
-                  &nbsp;
-                  <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/github.svg" />
-              </div>
-              <p style="text-align: justify;">
-                  TokyoScene is a Ruby on Rails web application optimised for mobile devices, designed to aggregate and recommend music events in Tokyo. By integrating real-time Spotify data, it curates event recommendations based on users' music preferences, offering a personalised list of upcoming gigs.
-              </p>
-              <a class="project-link" target="_blank" href="https://www.tokyoscene.me">Check it out!</a>
-          </div>
-        </div>
-
-        <!-- User Project #2: USpeak4Me -->
-        <div class="user-projects col-12 col-md-6" style="display: flex;">
-
-          <div class="images-left" >
-            <picture>
-              <!-- <source type="image/webp" srcset="./assets/img/webp/Perpetual-Crusades.webp" alt="Perpetual Crusades" /> -->
-              <img alt="USpeak4Me" src="assets/img/jpg/USpeak4Me_Indexpage.jpg" class="USpeak4Me-img" />
-            </picture>
-          </div>
-          <div class="contents-right" style="text-align: center">
-            <h3>USpeak4Me</h3>
-            <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/ruby.svg" style="filter: invert(73%) sepia(74%) saturate(1552%) hue-rotate(169deg) brightness(109%) contrast(97%)"/>
-            &nbsp;
-            <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/rubyonrails.svg" style="filter: invert(33%) sepia(29%) saturate(3844%) hue-rotate(184deg) brightness(90%) contrast(84%)"/>
-            &nbsp;
-            <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/github.svg" />
-            <p style="text-align: justify">
-              A web application built on Ruby on Rails that connects foreign-born residents in Japan with interpreters for Japanese to English (or other languages). It facilitates essential administrative tasks such as visiting city hall, apartment rentals, and making phone calls, bridging communication gaps for easier navigation of local services.
-            </p>
-            <a class="project-link" target="_blank" href="https://uspeak4me-c92c1d2ed740.herokuapp.com"
-              >Check it out!</a
-            >
-          </div>
-        </div>
+    <!-- User Project #1: TokyoSecene -->
+    <div class="user-projects col-12 col-md-6" style="display: flex; ">
+      <div class="images-right" style="display: flex; justify-content: flex-start; gap: 15px;">
+          <img src="assets/img/jpg/TokyoScene_Indexpage.jpg" alt="TokyoScene_Homepage" class="tokyoscene-img" style="width: 33%;">
+          <img src="assets/img/jpg/TokyoScene_Details.jpg" alt="TokyoScene_Details" class="tokyoscene-img" style="width: 33%;">
+          <img src="assets/img/jpg/TokyoScene_Chat.jpg" alt="TokyoScene_Chat" class="tokyoscene-img" style="width: 33%;">
       </div>
+      <div class="contents" style="text-align: center;">
+          <h3>Tokyo Scene</h3>
+          <div>
+              <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/rubyonrails.svg" style="filter: invert(73%) sepia(74%) saturate(1552%) hue-rotate(169deg) brightness(109%) contrast(97%);" />
+              &nbsp;
+              <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/ruby.svg" style="filter: invert(24%) sepia(14%) saturate(2270%) hue-rotate(222deg) brightness(102%) contrast(90%);" />
+              &nbsp;
+              <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/javascript.svg" style="filter: invert(33%) sepia(29%) saturate(3844%) hue-rotate(184deg) brightness(90%) contrast(84%);" />
+              &nbsp;
+              <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/github.svg" />
+          </div>
+          <p style="text-align: justify;">
+              TokyoScene is a Ruby on Rails web application optimised for mobile devices, designed to aggregate and recommend music events in Tokyo. By integrating real-time Spotify data, it curates event recommendations based on users' music preferences, offering a personalised list of upcoming gigs.
+          </p>
+          <a class="project-link" target="_blank" href="https://www.tokyoscene.me">Check it out!</a>
+      </div>
+    </div>
+
+    <!-- User Project #2: USpeak4Me -->
+    <div class="user-projects col-12 col-md-6" style="display: flex;">
+
+      <div class="images-left" >
+        <picture>
+          <!-- <source type="image/webp" srcset="./assets/img/webp/Perpetual-Crusades.webp" alt="Perpetual Crusades" /> -->
+          <img alt="USpeak4Me" src="assets/img/jpg/USpeak4Me_Indexpage.jpg" class="USpeak4Me-img" />
+        </picture>
+      </div>
+      <div class="contents-right" style="text-align: center">
+        <h3>USpeak4Me</h3>
+        <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/ruby.svg" style="filter: invert(73%) sepia(74%) saturate(1552%) hue-rotate(169deg) brightness(109%) contrast(97%)"/>
+        &nbsp;
+        <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/rubyonrails.svg" style="filter: invert(33%) sepia(29%) saturate(3844%) hue-rotate(184deg) brightness(90%) contrast(84%)"/>
+        &nbsp;
+        <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/github.svg" />
+        <p style="text-align: justify">
+          A web application built on Ruby on Rails that connects foreign-born residents in Japan with interpreters for Japanese to English (or other languages). It facilitates essential administrative tasks such as visiting city hall, apartment rentals, and making phone calls, bridging communication gaps for easier navigation of local services.
+        </p>
+        <a class="project-link" target="_blank" href="https://uspeak4me-c92c1d2ed740.herokuapp.com"
+          >Check it out!</a
+        >
+      </div>
+    </div>
+  </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
       <p>&copy; Xinyi Wang, 2024</p>
     </footer>
