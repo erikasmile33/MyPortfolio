@@ -1,3 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito+Sans);
+@import url(https://fonts.googleapis.com/css?family=Rubik);
+
 article,
 aside,
 figcaption,
@@ -141,13 +144,9 @@ a img {
     text-align: center
 }
 
-
-
 .header-icons .icon {
-  width: 100px;
-  height: 100px;
   transition: all .7s;
-  margin: 20px;
+  margin: 10px;
 }
 
 
@@ -296,7 +295,7 @@ a img {
 
 /* Footer styles */
 .footer {
-  background: linear-gradient(to right, #2B32B2, #be9ea0);
+  background: linear-gradient(to right, #c49b8d, #be9ea0);
   padding: 10px 0;
   margin-top: 100px;
   text-align: center;
