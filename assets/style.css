@@ -141,21 +141,20 @@ a img {
     text-align: center
 }
 
+
+
 .header-icons .icon {
-    height: 20px;
-    padding: 10px;
-    border-radius: 50%;
-    border: 2px solid #fff;
-    transition: all .7s;
-    width: 20px;
-    font-size: 20px;
-    margin: 5px
+  width: 100px;
+  height: 100px;
+  transition: all .7s;
+  margin: 20px;
 }
+
+
 
 .header-icons .icon:active,
 .header-icons .icon:hover {
-    color: #be9ea0;
-    background: #fff
+    color: #1488cb;
 }
 
 @media only screen and (min-width:550px) {
